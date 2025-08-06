@@ -1,5 +1,5 @@
 run:
-	npm start
+	npm start build-no-lint
 
 lint:
 	npx eslint .
