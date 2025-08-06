@@ -1,1 +1,11 @@
-
+name: Expedia Pipeline
+run-name: Build React Front-End Image
+on: [push]
+jobs:
+  Image:
+    runs-on: [self-hosted, Linux, x64]
+    services:
+      docker: docker:24-dind
+    steps:
+      - name: docker:24-dind
+        uses: actions/checkout@v2

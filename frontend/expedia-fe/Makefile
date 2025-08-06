@@ -2,4 +2,10 @@ run:
 	npm start
 
 lint:
-	npm run lint
+	npx eslint .
+
+lint-fix: 
+	npx eslint --fix
+
+global:
+	npm run build
