@@ -1,6 +1,0 @@
-FROM node:current-alpine3.22 AS build
-WORKDIR /app
-COPY frontend/expedia-fe/package*.json
-RUN npm install
-COPY frontend/expedia-fe ./
-RUN npm run build
