@@ -13,11 +13,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "build-no-lint": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "build": "react-scripts build DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "test": "react-scripts test DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "eject": "react-scripts eject DISABLE_ESLINT_PLUGIN=true react-scripts build"
   },
   "eslintConfig": {
     "extends": [

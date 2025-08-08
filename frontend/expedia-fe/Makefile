@@ -1,5 +1,5 @@
 run:
-	npx run build-no-lint
+	npx build build-no-lint
 
 lint:
 	npx eslint .
